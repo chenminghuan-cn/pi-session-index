@@ -1,8 +1,26 @@
-# pi-session-index
+<div align="center">
 
-A SQLite index over pi's JSONL session files. Lists 406 sessions in **8 ms** instead of **5.9 s** — without touching pi.
+<img src="docs/icon.svg" width="76" height="76" alt="pi-session-index" />
 
-![no dependencies](https://img.shields.io/badge/dependencies-0-brightgreen) ![node](https://img.shields.io/badge/node-%3E%3D22.5-blue) ![license](https://img.shields.io/badge/license-MIT-blue)
+<h1>pi-session-index</h1>
+
+<p><b>会话列表 5.9 秒 → 8 毫秒，pi 一行都不用改。</b></p>
+
+<p>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT"></a>
+  <img src="https://img.shields.io/badge/node-%3E%3D22.5-5FA04E?logo=node.js&logoColor=white" alt="node">
+  <img src="https://img.shields.io/badge/dependencies-0-brightgreen" alt="dependencies">
+  <img src="https://img.shields.io/badge/storage-SQLite-003B57?logo=sqlite&logoColor=white" alt="sqlite">
+</p>
+
+<p>
+pi 把每个会话写成 JSONL，列一次清单要扫几百个文件，长会话单文件能到 190MB。<br>
+这个工具在会话旁边建一份 SQLite 索引，只读文件头 —— <b>不写 sessions/、不给 pi 打补丁、删了自动重建</b>。
+</p>
+
+<p><i>A SQLite index over pi's JSONL sessions — 406 sessions from 5.9 s to 8 ms, without touching pi.</i></p>
+
+</div>
 
 ![pi-session-index demo](docs/demo.png)
 
