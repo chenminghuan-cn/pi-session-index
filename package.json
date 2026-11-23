@@ -1,0 +1,34 @@
+{
+  "name": "pi-session-index",
+  "version": "0.1.0",
+  "description": "SQLite index over pi's JSONL session files — 405 sessions from 6s to 20ms, without touching pi",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "bin": {
+    "pi-session-index": "./bin/cli.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/cli.mjs",
+    "test": "node test/smoke.mjs"
+  },
+  "keywords": [
+    "pi",
+    "pi-coding-agent",
+    "sqlite",
+    "session",
+    "index"
+  ],
+  "dependencies": {}
+}
