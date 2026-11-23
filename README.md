@@ -2,7 +2,9 @@
 
 A SQLite index over pi's JSONL session files. Lists 406 sessions in **8 ms** instead of **5.9 s** — without touching pi.
 
-![no dependencies](https://img.shields.io/badge/dependencies-0-brightgreen) ![node](https://img.shields.io/badge/node-%3E%3D22.5-blue)
+![no dependencies](https://img.shields.io/badge/dependencies-0-brightgreen) ![node](https://img.shields.io/badge/node-%3E%3D22.5-blue) ![license](https://img.shields.io/badge/license-MIT-blue)
+
+![pi-session-index demo](docs/demo.png)
 
 ## The problem
 
